@@ -33,11 +33,11 @@ function remove() {
 */
 
 document.querySelector("#login-btn1").addEventListener("click", () => {
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
   history.replaceState(null, null, "/");
 });
 document.querySelector("#login-btn").addEventListener("click", () => {
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
   history.replaceState(null, null, "/");
 });
 
