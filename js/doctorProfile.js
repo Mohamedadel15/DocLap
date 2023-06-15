@@ -68,7 +68,7 @@ menuIcone.addEventListener("click", () => {
 document
   .querySelector("#nav-header .container .logo")
   .addEventListener("click", () => {
-    window.location.href = "./home.html";
+    window.location.href = "../home.html";
   });
 
 
