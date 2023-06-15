@@ -314,6 +314,31 @@
             });
         }
 
+
+        /*
+            -- log out 
+        */
+
+        document.querySelector("#login-btn1").addEventListener("click", () => {
+            window.location.href = "../index.html";
+            history.replaceState(null, null, "/");
+        });
+        document.querySelector("#login-btn").addEventListener("click", () => {
+            window.location.href = "../index.html";
+            history.replaceState(null, null, "/");
+        });
+
+        /*
+            -- event handlers to return hte first page
+        */
+
+        document
+            .querySelector("#nav-header .container .logo")
+            .addEventListener("click", () => {
+                window.location.href = "../home.html";
+            });
+
+
     </script>
 
 
