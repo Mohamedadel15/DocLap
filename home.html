@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    - primary meta tag 
+    -->
+    <title> DocLap </title>
+    <meta name="description"
+        content="DocLap: Your trusted medical companion. Access reliable health information, connect with top doctors, and manage your healthcare needs seamlessly">
+    <meta name="title" content="DocLap  Empowering Your Medical Journey">
+
+    <!-- 
+    - font awesome 
+    -->
+    <link rel="stylesheet" href="./style/all.min.css">
+
+    <!-- 
+    -  favicons logo 
+    -->
+    <link rel="shortcut icon" href="./images/favicon logo.svg" type="svg+xml">
+
+    <!-- 
+    - styling css
+    -->
+    <link rel="stylesheet" href="./style/home.css">
+
+    <!-- 
+    - script js 
+    -->
+    <script src="./js/main.js" defer></script>
+    <!-- 
+    - preload images
+    -->
+    <link rel="preload" as="image" href="./images/hero-banner.png">
+    <link rel="preload" as="image" href="./images/welcome-bg.png">
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header id="nav-header">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/nav logo.svg" alt="logo" draggable="false">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="./home.html">home</a></li>
+                    <li><a href="./doctors.html">doctors</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="location.html">contact</a></li>
+                    <li><a href="./blog.html">blog</a></li>
+
+                </ul>
+
+
+            </div>
+            <div class="login">
+                <button id="login-btn">
+                    <p>log out</p>
+                </button>
+                <i class="fa-solid fa-bars" id="barsIcone"></i>
+                <i class="fa-solid fa-user" id="userIcone"></i>
+                <span data-number="0" id="countNumber"></span>
+
+            </div>
+
+        </div>
+        <div class="menu-header">
+            <div class="links">
+                <ul>
+                    <li><a href="./home.html">home</a></li>
+                    <li><a href="./doctors.html">doctors</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="location.html">contact</a></li>
+                    <li><a href="./blog.html">blog</a></li>
+                    <li>
+                        <button id="login-btn1">
+                            <p>log out</p>
+                        </button>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </div>
+    </header>
+    <section id="welcome-info">
+        <div class="container">
+            <div class="hero-text">
+                <div class="header-welcome" data-transform="left">
+                    <span></span>
+                    <p>Welcome To Doclab</p>
+                </div>
+                <h1 data-transform="left">Find Nearest Doctor.</h1>
+                <div class="card-location" data-transform="left">
+                    <h3>Search doctors. clinics. hospitals. etc.</h3>
+                    <div class="location">
+                        <div class="find">
+                            <p>location</p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <button id="location-btn">
+                                <p><i class="fa-solid fa-magnifying-glass"></i> find now</p>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="hero-image" data-transform="right">
+                <img src="./images/hero-banner.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="card-info">
+                <img src="./images/icon-info-1.png" alt="icon info ">
+                <h1>Psychiatry</h1>
+                <p> The medical specialty focused on mental health and disorders.</p>
+                <div class="btn-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="card-info">
+                <img src="./images/icon-info-2.png" alt="icon info ">
+                <h1>Gynecology</h1>
+                <p> The branch of medicine that deals with pregnancy, </p>
+                <div class="btn-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="card-info">
+                <img src="./images/icon-info-3.png" alt="icon info ">
+                <h1>Pulmonology</h1>
+                <p> A chronic respiratory condition characterized by airway </p>
+                <div class="btn-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="card-info">
+                <img src="./images/icon-info-4.png" alt="icon info ">
+                <h1>Orthopedics</h1>
+                <p>Inflammation of one or more joints, resulting in pain</p>
+                <div class="btn-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="aboutUS" id="about">
+        <div class="container">
+            <div class="text-about">
+                <div class="about-text">
+                    <p data-transform="left">About Us</p>
+                    <h1 data-transform="left">Experienced Workers</h1>
+                    <p data-transform="left">Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a
+                        porta ante lectus dapibus est. Aliquam</p>
+                </div>
+                <div class="btn-about" data-transform="left">
+                    <button class="active" data-result="vision">
+                        <p>vision</p>
+                    </button>
+                    <button data-result="mission">
+                        <p>mission</p>
+                    </button>
+                    <button data-result="strategy">
+                        <p>strategy</p>
+                    </button>
+                </div>
+                <div class="card-about-btn-info">
+                    <div class="vision card">
+                        <p data-transform="left">Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a
+                            porta ante lectus dapibus est. Aliquam a bibendum mi, sed condimentum</p>
+                        <div class="about-result">
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Sonsectetur adipisicing elit</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Eiusmod tempor incididunt</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Exercitation ullamco laboris</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Aolore magna aliqua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strategy card hidden">
+                        <p data-transform="left">Being strategic is a mindset that helps individuals and organizations
+                            make thoughtful decisions and take purposeful actions to achieve their goals. It involves
+                            careful planning, analysis, adaptability, and a focus on long-term success.</p>
+                        <div class="about-result">
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                                <p>Evaluation and Learning</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Collaboration and Communication</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                                <p>Risk Management</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Long-Term Perspective</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Competitive Advantage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission hidden card">
+                        <p data-transform="left">In the field of medicine, a mission refers to a central purpose or
+                            objective that guides healthcare professionals and organizations in their work. Medical
+                            missions typicall</p>
+                        <div class="about-result">
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Patient-Centered Care</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Excellence and Quality</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Education and Research</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                                <p>Global Health Initiatives</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p>Ethical Principles</p>
+                            </div>
+                            <div class="result" data-transform="left">
+                                <i class="fa-regular fa-circle-xmark"></i>
+                                <p>Global Health Initiatives</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image" data-transform="right">
+                <img src="./images/about-image.png" alt="about image">
+            </div>
+        </div>
+    </section>
+    <section class="Doctors-listing" id="listing">
+        <div class="container">
+            <div class="text">
+                <p data-transform="left">Doctors Listig</p>
+                <h1 data-transform="left">Browse by specialist </h1>
+            </div>
+            <div class="card" data-transform="top">
+                <img src="./images/icon-info-1.png" alt="logo listing of doctors">
+                <div class="card-text">
+                    <h3>
+                        Psychiatry
+                    </h3>
+                    <p>Porta velit</p>
+                </div>
+            </div>
+            <div class="card" data-transform="top">
+                <img src="./images/icon-info-2.png" alt="logo listing of doctors">
+                <div class="card-text">
+                    <h3>
+
+                        Gynecology
+                    </h3>
+                    <p>Mattis augue </p>
+                </div>
+            </div>
+            <div class="card" data-transform="top">
+                <img src="./images/icon-info-3.png" alt="logo listing of doctors">
+                <div class="card-text">
+                    <h3>
+
+                        Pulmonology
+                    </h3>
+                    <p>Mauris laoreet </p>
+                </div>
+
+            </div>
+            <div class="card" data-transform="top">
+                <img src="./images/icon-5.png" alt="logo listing of doctors">
+                <div class="card-text">
+                    <h3>
+
+                        Orthopedics
+                    </h3>
+                    <p>Convallis vulputate</p>
+                </div>
+
+            </div>
+            <div class="card" data-transform="top">
+                <img src="././images/icon-6.png" alt="logo listing of doctors">
+                <div class="card-text">
+                    <h3>
+                        Osteology
+                    </h3>
+                    <p>Nisi nullam</p>
+                </div>
+
+            </div>
+            <div class="card" data-transform="top">
+                <img src="././images/icon-7.png" alt="logo listing of doctors">
+                <div class="card-text">
+                    <h3>
+                        Psychiatry
+                    </h3>
+                    <p>Posuere maecenas</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="News-Article" id="Latest-news">
+        <div class="news-header">
+            <p>News & Article</p>
+            <h1>Latest Articles</h1>
+        </div>
+        <div class="container">
+            <div class="swiper-wrapper">
+                <div class="neW-card">
+                    <div class="admin">
+                        <div class="user">
+                            <i class="fa-regular fa-user"></i>
+                            <p>BY ADMIN</p>
+                        </div>
+                        <div class="specialist">
+                            <i class="fa-regular fa-folder"></i>
+                            <p>specialist </p>
+                        </div>
+                    </div>
+                    <h2>Could intermittent fasting reduce breast cancer</h>
+                        <p>28 JANUARY, 2022</p>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat</p>
+                        <a href="blog.html">read more</a>
+
+                </div>
+
+                <div class="neW-card">
+                    <div class="admin">
+                        <div class="user">
+                            <i class="fa-regular fa-user"></i>
+                            <p>BY ADMIN</p>
+                        </div>
+                        <div class="specialist">
+                            <i class="fa-regular fa-folder"></i>
+                            <p>specialist </p>
+                        </div>
+                    </div>
+                    <h2>Give children more autonomy during the pandemic</h2>
+                    <p>28 JANUARY, 2022</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt
+                        ut labore et dolore magna aliquyam erat</p>
+                    <a href="blog.html">read more</a>
+
+                </div>
+                <div class="neW-card">
+                    <div class="admin">
+                        <div class="user">
+                            <i class="fa-regular fa-user"></i>
+                            <p>BY ADMIN</p>
+                        </div>
+                        <div class="specialist">
+                            <i class="fa-regular fa-folder"></i>
+                            <p>specialist </p>
+                        </div>
+                    </div>
+                    <h2>How do binge eating and drinking impact the liver?</h>
+                        <p>28 JANUARY, 2022</p>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat</p>
+                        <a href="blog.html">read more</a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="doclap" data-transform="top">
+                <div class="logo">
+                    <img src="./images/nav logo.svg" alt="logo">
+                </div>
+                <div class="mail-info">
+                    <i class="fa-regular fa-envelope-open"></i>
+                    <div class="text-mail-info">
+                        <p>Main Email : <a href="mailto:mibo82239@gmail.com">mibo82239@gmail.com</a></p>
+                        <p>Inquiries : <a href="mailto:mohamed256@edu.eg "> mohamed256@edu.eg </a></p>
+                    </div>
+                </div>
+                <div class="phone-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="text-phone">
+                        <p>Office Telephone : <span>+02 01126117701</span></p>
+                        <p>Mobile : <span>+02 01095885109</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="about-us" data-transform="top">
+                    <h2>About Us</h2>
+                    <p>Aliquam Faucibus, Odio Nec Commodo Aliquam, Neque Felis Placerat Dui, A Porta Ante Lectus Dapibus
+                        Est. Aliquam</p>
+                    <div class="mapleview">
+                        <i class="fa-solid fa-scroll"></i>
+                        <p>2416 Mapleview Drive Tampa, FL 33634</p>
+                    </div>
+                </div>
+                <div class="services" data-transform="top">
+                    <h2>services</h2>
+                    <ul>
+                        <li><a href="#">condition</a></li>
+                        <li><a href="#listing">listing</a></li>
+                        <li><a href="#">how it work</a></li>
+                        <li><a href="#">what we offer</a></li>
+                        <li><a href="#Latest-news">Latest news </a></li>
+                        <li><a href="location.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="Useful-Links" data-transform="top">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#">condition</a></li>
+                        <li><a href="location.html">terms of us</a></li>
+                        <li><a href="services.html">our services</a></li>
+                        <li><a href="./doctors.html">join as a doctor </a></li>
+                        <li><a href="#Latest-news">new guid list </a></li>
+                        <li><a href="#about">the team list</a></li>
+                    </ul>
+
+                </div>
+                <div class="subscribe" data-transform="top">
+                    <h2>Subscribe</h2>
+                    <form action="#" method="post">
+                        <input type="email" name="user-mail" id="inpt-main" required placeholder="email">
+                        <button>
+                            <p>Subscribe</p>
+                        </button>
+                    </form>
+                    <p>Get the latest updates via email. Any time you may unsubscribe </p>
+                </div>
+
+            </div>
+            <div class="social">
+                <hr>
+                <div class="social-info">
+                    <p data-transform="left">© Doclab 2023 | All Rights Reserved by mohamed adel</p>
+                    <div class="social-account" data-transform="right">
+                        <a href="https://www.facebook.com/profile.php?id=100014882028696" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100014882028696" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100014882028696" target="_blank">
+                            <iclass="fa-brands fa-google"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-adel-02799b253" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Mohamedadel15" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="menuListUser activeUSer">
+        <i class="fa-solid fa-xmark" id="close-menuListUser"></i>
+        <div class="box-user">
+             <div class="info"> 
+            </div> 
+
+        </div>
+    </section>
+
+    
+    <script>
+        const btnLocation = document.getElementById("location-btn");
+        btnLocation.addEventListener("click", () => {
+            window.location.href = "location.html";
+        });
+
+    </script>
+
+</body>
+
+</html>

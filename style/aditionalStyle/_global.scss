@@ -1,0 +1,117 @@
+/* 
+    -- google font
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cairo:wght@400;600&family=DynaPuff:wght@400;600&family=Josefin+Sans:wght@600&family=Oswald:wght@200;400;500;700&family=Roboto:wght@400;500;900&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cairo:wght@400;600&family=DynaPuff:wght@400;600&family=Josefin+Sans:wght@600&family=Oswald:wght@200;400;500;700&family=Roboto:wght@400;500;900&family=Rubik+Wet+Paint&family=Rubik:wght@300;400;600&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap');
+
+/* 
+    -- global setting
+*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration:none ;
+    text-transform: capitalize;
+
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $font-oswald;
+    background-color: $white;
+}
+section{
+    overflow:hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-oswald;
+    margin: 0;
+}
+h1{
+    font-size: $headline-lg;
+    color: $midnight-green;
+}
+h2{
+    font-size: $headline-md;
+}
+
+p,a,li{
+    font-family: $font-rubik;
+    font-weight: $font-weight-1;
+    font-size: $title-md;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+button{
+    padding: $title-lg $headline-md;
+    background-color: $verdigris;
+    color: $white;
+    cursor: pointer;
+    border: none;
+    border-radius:$radius-6;
+    position: relative;
+    overflow: hidden;
+    p{
+        position: relative;
+        font-weight: $font-weight-2;
+        font-size: $title-md;
+    }
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+    @include media-sm{
+        width: 95%;
+    }
+}
+
+i{
+    cursor: pointer;
+}
+[data-transform]{
+    opacity:0;
+    transition: $transition-2;
+}
+
+[data-transform="left"]{transform: translateX(-50px);}
+
+[data-transform="right"]{transform: translateX($fixed-5);}
+[data-transform="top"]{transform: translateY($fixed-2);}
+.show{
+    opacity: 1 !important;
+    transform: translate(0) !important;
+
+}
+.active {
+    background-color:$alice-blue;
+    color: $verdigris !important;
+    border: $border-1;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+

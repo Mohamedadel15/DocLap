@@ -1,0 +1,12 @@
+@mixin media-sm(){
+    @media (width <= 768px){
+        @content
+    }
+};
+
+@mixin media-md(){
+    @media (width <= 1140px){
+        @content
+    }
+}
+

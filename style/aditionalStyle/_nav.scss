@@ -1,0 +1,142 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  transition: $transition-1;
+  .container {
+@include flexBetween;
+    padding: $title-sm;
+    .logo{
+      cursor: pointer;
+    }
+    .links {
+        @include media-md{
+            display:  none;
+        }
+      ul {
+        display: flex;
+        li {
+          a {
+            padding: $headline-md;
+            color: $white;
+          }
+        }
+      }
+    }
+    .login {
+      @include flexCenter;
+      gap: $headline-sm;
+      position: relative;
+      :nth-child(2) {
+        color: $white;
+        visibility: hidden;
+        @include media-md{
+            visibility: visible;
+        }
+      }
+      #login-btn {
+        padding: $title-sm;
+        @include media-md{
+          visibility: hidden;
+        }
+      }
+      i {
+        font-size: $headline-md;
+        color: $gray-web;
+      }
+      span {
+        &::after {
+          content: attr(data-number);
+          font-size: $title-sm;
+          border-radius: $radius-circle;
+          background-color: $gainsboro;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: calc($fixed-3 - 5px);
+          height: calc($fixed-3 - 5px);
+          @include flexCenter;
+        }
+      }
+    }
+  }
+}
+
+
+.menu-header{
+  position: fixed;
+  height: 53vh;
+  width: 100%;
+  top:0;
+  background-color: $white;
+  z-index: 12;
+  opacity:0;
+  visibility:hidden;
+  transition: $transition-2;
+  
+  .links{
+      ul{
+          li{
+              padding: $fixed-2/1.15 $fixed-1;
+              border-bottom: $border-1;
+              a{
+                  font-weight: $font-weight-2;
+                  color: $midnight-green;
+                  font-size: $headline-sm;
+                  
+              }
+          }
+      }
+ 
+  }
+  
+}
+
+
+.hidden-nav{
+  opacity:1;
+  visibility:visible;
+  top:calc($fixed-3*2.5) ;
+}
+
+
+.menuListUser{
+  padding: $fixed-2;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  height: 100vh;
+  width: 40vw;
+  background-color:$black;
+  box-shadow: $shadow-2;
+  transition: $transition-2;
+  @include bgImage("../images/welcome-bg.png");
+  @include media-sm{
+    width: 100%;
+  }
+  i{
+    font-size: $title-lg;
+     background-color: $white;
+     padding: $fixed-1;
+     border-radius: $radius-6;
+  }
+  .info{
+    border-radius: $radius-6;
+    margin:$fixed-2 0;
+    background-color: $white;
+    padding: $fixed-1;
+  }
+
+
+}
+
+
+.menuListUser.activeUSer{
+  right: -100%;
+  visibility: hidden;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    - primary meta tag 
+    -->
+    <title> login DocLap </title>
+    <meta name="description"
+        content="DocLap: Your trusted medical companion. Access reliable health information, connect with top doctors, and manage your healthcare needs seamlessly">
+    <meta name="title" content="DocLap  Empowering Your Medical Journey">
+    
+    <!-- 
+    - font awesome 
+    -->
+    <link rel="stylesheet" href="./style/all.min.css">
+    
+    <!-- 
+    -  favicons logo 
+    -->
+    <link rel="shortcut icon" href="./images/favicon logo.svg" type="svg+xml">
+    
+    <!-- 
+    - styling css
+    -->
+        <link rel="stylesheet" href="./style/login.css">
+    <!-- 
+        - script js 
+    -->
+    <script src="./js/login.js" defer></script>
+    <script src="./js/main.js" defer></script>
+
+</head>
+
+
+<body>
+</body>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<div class="notvalid">
+    <i class="fa-regular fa-circle-xmark"></i>
+    <p>password or mail is not valid </p>
+</div>
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <form id="login">
+        <p class="form-title">Sign in</p>
+         <div class="input-container">
+           <input type="email" placeholder="Enter email" required id="mail">
+
+       </div>
+       <div class="input-container">
+           <input type="password" placeholder="Enter password" required id="password">
+           <span></span>
+         </div>
+          <button type="submit" class="submit">
+         <p>Sign in</p>
+       </button>
+ 
+       <p class="signup-link">
+         No account?
+         <a href="./signup.html">Sign up</a>
+       </p>
+    </form>
+
+    </div>
+    
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+
+
+
+
+
+</html>

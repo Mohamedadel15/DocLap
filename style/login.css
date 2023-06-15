@@ -1,0 +1,554 @@
+/* 
+    -- colors
+*/
+/* 
+    -- text 
+*/
+/* 
+    -- fixed size 
+*/
+/* 
+    -- shadow 
+*/
+/* 
+    -- radius 
+*/
+/* 
+    -- transition 
+*/
+/* 
+    -- border 
+*/
+/* 
+    -- google font
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cairo:wght@400;600&family=DynaPuff:wght@400;600&family=Josefin+Sans:wght@600&family=Oswald:wght@200;400;500;700&family=Roboto:wght@400;500;900&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cairo:wght@400;600&family=DynaPuff:wght@400;600&family=Josefin+Sans:wght@600&family=Oswald:wght@200;400;500;700&family=Roboto:wght@400;500;900&family=Rubik+Wet+Paint&family=Rubik:wght@300;400;600&family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap");
+/* 
+    -- global setting
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+section {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: hsl(186, 100%, 19%);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p, a, li {
+  font-family: "Rubik", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+button {
+  padding: 1.8rem 3rem;
+  background-color: hsl(182, 100%, 35%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+button p {
+  position: relative;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (width <= 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+i {
+  cursor: pointer;
+}
+
+[data-transform] {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+[data-transform=left] {
+  transform: translateX(-50px);
+}
+
+[data-transform=right] {
+  transform: translateX(5rem);
+}
+
+[data-transform=top] {
+  transform: translateY(2rem);
+}
+
+.show {
+  opacity: 1 !important;
+  transform: translate(0) !important;
+}
+
+.active {
+  background-color: hsl(187, 25%, 94%);
+  color: hsl(182, 100%, 35%) !important;
+  border: 1px solid hsl(182, 100%, 35%);
+}
+
+.hidden {
+  display: none;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 13%);
+  left: -100%;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+button:hover::before {
+  left: 0;
+  border-left: 1px solid hsl(182, 100%, 35%);
+  border-right: 1px solid hsl(182, 100%, 35%);
+  border-radius: inherit;
+}
+
+.btn-arrow:hover {
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.06);
+  color: hsl(0, 0%, 100%) !important;
+  background-color: hsl(182, 100%, 35%);
+}
+
+.Doctors-listing .container .card:hover, .all-doctors .container .card:hover {
+  border-color: hsl(182, 100%, 35%);
+}
+
+.News-Article .container .swiper-wrapper .neW-card::before, .News-Article .container .swiper-wrapper .neW-card::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-image: url(../images/blog-card.jpg);
+  opacity: 0.7;
+  z-index: 1;
+  transition: 0.5s linear;
+}
+.News-Article .container .swiper-wrapper .neW-card::after {
+  background: hsl(186, 72%, 24%);
+  opacity: 0.9;
+}
+.News-Article .container .swiper-wrapper .neW-card:hover::before, .News-Article .container .swiper-wrapper .neW-card:hover::after {
+  top: 0;
+}
+.News-Article .container .swiper-wrapper .neW-card:hover .admin, .News-Article .container .swiper-wrapper .neW-card:hover p, .News-Article .container .swiper-wrapper .neW-card:hover a, .News-Article .container .swiper-wrapper .neW-card:hover h2 {
+  position: relative;
+  z-index: 3;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.footer .container .doclap .mail-info a:hover {
+  color: hsl(182, 100%, 35%);
+}
+.footer .container .doclap .phone-info span:hover {
+  color: hsl(182, 100%, 35%);
+}
+.footer .container .footer-info .services ul li a:hover,
+.footer .container .footer-info .Useful-Links ul li a:hover {
+  color: hsl(182, 100%, 35%);
+}
+.footer .container .social .social-info i:hover {
+  background-color: hsl(182, 100%, 35%);
+}
+
+#ourServices .container .text-services .card:hover {
+  border-color: hsl(182, 100%, 35%);
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, hsl(182, 100%, 35%) 0%, hsl(182, 100%, 35%) 100%);
+}
+.header .inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header div .waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+.header div .parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.header div .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.header div .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.header div .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.header div .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(182, 100%, 35%);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+#preloader .loader {
+  border: 4px solid hsl(0, 0%, 100%);
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaded-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.notvalid {
+  position: absolute;
+  top: 3rem;
+  left: -100%;
+  transition: 0.5s ease;
+  z-index: 12356;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.06);
+}
+.notvalid i {
+  font-size: 3rem;
+  color: red;
+  order: 1;
+}
+.notvalid p {
+  color: hsl(218, 70%, 18%);
+  font-size: 1.8rem;
+}
+
+.active {
+  left: 0;
+}
+
+#login {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
+  background-color: #fff;
+  display: block;
+  padding: 2rem;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.06);
+}
+@media (width <= 768px) {
+  #login {
+    width: 300px;
+  }
+}
+#login .form-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+#login .input-container input,
+#login .form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+  padding: calc(1rem + 5px);
+}
+#login .input-container {
+  position: relative;
+}
+#login .input-container > input[type=email] {
+  margin-top: 5rem;
+}
+#login .input-container input {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.06);
+  font-size: 2rem;
+}
+#login .submit {
+  margin-top: 2rem;
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}
+#login .submit p {
+  font-size: 2rem;
+}
+#login .signup-link {
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+#login .signup-link a {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  -webkit-text-decoration: underline royalblue;
+          text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:-moz-placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=login.css.map */

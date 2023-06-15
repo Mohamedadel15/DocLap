@@ -1,0 +1,31 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $verdigris;
+  z-index: 11;
+  @include flexCenter;
+  transition: opacity 0.50s ease-in-out , visibility 0.50s ease-in-out;
+  .loader {
+    border: 4px solid $white;
+    border-top: 4px solid transparent;
+    border-radius: $radius-circle;
+    width: $fixed-5;
+    height: $fixed-5;
+    animation: spin 2s linear infinite;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaded-hidden {
+  visibility: hidden;
+  opacity: 0;
+}

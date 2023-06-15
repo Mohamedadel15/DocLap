@@ -1,0 +1,130 @@
+.footer {
+  background-color: $midnight-green;
+  @include bgImage("../images/welcome-bg.png");
+  .container {
+    @include flexCenter;
+    flex-direction: column;
+    padding: 100px 0;
+    .doclap {
+      width: 100%;
+      padding: 30px 50px;
+      @include flexCenter;
+      justify-content: space-between;
+      background-color: $ming;
+      border-radius: $radius-6;
+      @include media-md{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px));
+        gap:20px;
+
+      }
+      .mail-info,
+      .phone-info {
+        @include flexCenter;
+        gap: 20px;
+        font-size: $headline-sm;
+        color: $white;
+        i {
+          font-size: $headline-md;
+        }
+        a {
+          color: $white;
+          transition: $transition-1;
+        }
+        span {
+          cursor: pointer;
+          transition: $transition-1;
+        }
+      }
+    }
+    .footer-info {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 60px;
+      margin: 50px 0;
+      color: $white;
+      .about-us {
+        p {
+          margin: 20px 0;
+        }
+        .mapleview {
+          @include flexCenter;
+          gap: 20px;
+          i {
+            font-size: $headline-md;
+          }
+        }
+      }
+      .services ,
+      .Useful-Links{
+        ul {
+          display: flex;
+          flex-direction: column;
+          li {
+            padding: 10px;
+            a{
+              font-size: $title-lg;
+              color: $white;
+              transition: $transition-1;
+            }
+          }
+        }
+      }
+      .subscribe{
+        form{
+            margin:30px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            input[type="email"]{
+                padding: 13px;
+                background-color: inherit;
+                border: 1px solid $verdigris ;
+                color: $white;
+                font-size: $title-lg;
+                &::placeholder{
+                    color: $white;
+                    font-size: $title-lg;   
+                }
+            }
+
+        }
+
+      }
+
+    }
+    .social{
+        width: 100%;
+        .social-info{
+            margin-top: 30px;
+            @include flexCenter;
+            justify-content: space-between;
+            @include media-sm{
+              flex-direction: column;
+            }
+            .social-account{
+              @include media-sm{
+                margin-top: 30px;
+              }
+            }
+            p{
+                color: $white;
+            }
+            i{
+                padding: 10px;
+                font-size: $headline-sm;
+                border-radius: $radius-circle;
+                background-color: $white_a10;
+                color: $white;
+                margin-right: 10px;
+                transition: $transition-1;
+            }
+            
+        }
+        
+      }
+      
+  }
+}
+

@@ -1,0 +1,204 @@
+@import "./aditionalStyle/variable";
+@import "./aditionalStyle/media";
+@import "./aditionalStyle/global";
+@import "./aditionalStyle/hover";
+@import "./aditionalStyle/mixin";
+
+@import "./aditionalStyle/nav";
+@import "./aditionalStyle/preloader";
+@import "./aditionalStyle/footer";
+
+.allInfo {
+  @include flexCenter;
+  @include media-sm {
+    @include flexColumn;
+  }
+  gap: $fixed-3;
+  background-color: $blue;
+  min-height: 100vh;
+  .pictureProfile {
+    color: $white;
+    @include flexColumn;
+    width: 400px;
+    height: 750px;
+    background-color: $blue-a20;
+    padding: $fixed-2;
+    border-radius: 0 $radius-12 $radius-12 0;
+    img {
+      border: 5px solid $white;
+      width: 180px;
+      max-height: 100%;
+      height: 180px;
+      border-radius: $radius-circle;
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+    }
+  }
+
+  .text-list {
+    @include flexColumn;
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 400px);
+    overflow: hidden;
+    @include media-sm {
+      width: 100%;
+    }
+    .lists {
+      position: absolute;
+      top: 90px;
+      @include media-sm {
+        top: 0px;
+      }
+
+      background-color: $middle-blue-green_40;
+      overflow: hidden;
+      border-radius: $radius-6;
+      ul {
+        display: flex;
+        li {
+          transition: $transition-1;
+          padding: $fixed-2;
+          cursor: pointer;
+          font-size: $headline-sm;
+          color: $white;
+        }
+      }
+    }
+    .text {
+      margin-top: $fixed-10;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: relative;
+      .about,
+      .info,
+      .overview {
+        right: 100%;
+        position: absolute;
+        top: 0;
+        min-width: 100%;
+        height: 100%;
+        padding: $fixed-2;
+        @include flexColumn;
+        transition: $transition-2;
+        color: $white;
+        h2 {
+          margin: $fixed-3 0;
+        }
+      }
+      .info {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -250px;
+        gap: 30px;
+        @include media-sm{
+        grid-template-columns: 1fr 1fr;
+        }
+        .image{
+            img{
+                border-radius: $radius-12;
+            }
+            
+        }
+      }
+      .overview{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        
+      }
+    }
+  }
+}
+
+.right {
+  right: 0 !important;
+}
+
+
+.blog_post {
+    background: #fff;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  
+  .container_copy {
+    padding: 6rem 4rem 5rem 4rem;
+  }
+  
+  .img_pod {
+    height: 110px;
+    width: 110px;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    z-index: 9;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    position: absolute;
+    left: -10%;
+    top: -13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img_pod > img {
+    height: 8.3rem;
+    width: 8.3rem;
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  h3 {
+    margin: 0 0 0.5rem 0;
+    color: #999;
+    font-size: 1.25rem;
+  }
+  
+  h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+    color: #333;
+  }
+  
+  .container_copy > p {
+    margin: 0 0 4.5rem 0;
+    font-size: 1.5rem;
+    line-height: 1.45;
+    color: #333;
+  }
+  
+  .btn_primary {
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    padding: 1.5rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+  }
+  
+  .btn_primary:hover {
+    box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
+  }
+  
+  @media only screen and (max-width: 650px) {
+    body {
+      background-color: black;
+    }
+  
+    .img_pod {
+  
+    }
+  }

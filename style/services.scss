@@ -1,0 +1,70 @@
+@import "./aditionalStyle/variable";
+@import "./aditionalStyle/media";
+@import "./aditionalStyle/global";
+@import "./aditionalStyle/hover";
+@import "./aditionalStyle/mixin";
+
+@import "./aditionalStyle/nav";
+@import "./aditionalStyle/preloader";
+@import "./aditionalStyle/footer";
+
+section.services{
+    background-color: $blue;
+    @include bgImage("../images/welcome-bg.png");
+    .container{
+        margin:$fixed-10 *1.5 auto;
+        @include grid(350px);
+        .text{
+            grid-column: span 2;
+            h2{
+                color: $white;
+            }
+            h1{
+                color: $verdigris;
+            }
+            p{
+                margin: $fixed-3 0;
+                color: $white;
+            }
+            button{
+                a{
+                    position: relative;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+#ourServices{
+    h2{
+        margin-top: $fixed-5;
+        text-align: center;
+        color: $blue-a20;
+    }
+    h1{
+        text-align: center;
+        color: $black;
+    }
+    background-color: $alice-blue;
+    .container{
+        @include grid(300px);
+        .text-services{
+            .card{
+             @include flexCenter;
+                gap: $fixed-2;
+                margin: $fixed-2 0;
+                border: $border-2;
+                border-color: $middle-blue-green_40;
+                padding: $fixed-2;
+                cursor: pointer;
+                transition: $transition-1;
+                h2{
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+}

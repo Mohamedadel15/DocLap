@@ -1,0 +1,16 @@
+1- my project will be contain nav with 
+	home  doctors  services contact blog => about us 
+2- find location 
+3- in section doctors there are alot of notes i want to make it 
+	a. i will dividedd it by specialist 
+	b. i will make dynamic time for all doctor with ur time and i will talk the user if this doctor availab or not to dclare with it 
+	c. i will make for all doctor description 
+4-services 
+	a. i will make inside it alider and make the image focus 
+5- contct us we will use the forms pree to add the user when he will comunicate with us
+	a. i will make ur opinion in last of this  page wayv dynamic  
+6- i will add in nav bar all user appointment for all doctor 
+
+7- the name of this project is  CareDel 
+8-
+----------------------------------------------------------------------------------------------------------------------------------

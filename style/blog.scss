@@ -1,0 +1,48 @@
+@import "./aditionalStyle/variable";
+@import "./aditionalStyle/media";
+@import "./aditionalStyle/global";
+@import "./aditionalStyle/hover";
+@import "./aditionalStyle/mixin";
+
+@import "./aditionalStyle/nav";
+@import "./aditionalStyle/preloader";
+@import "./aditionalStyle/footer";
+
+.blog {
+  .container {
+    margin: $fixed-10 auto;
+    @include flexCenter;
+    height: 100%;
+    .notes {
+      box-shadow: $shadow-2;
+      background-color: $white;
+      border-radius: $radius-12;
+      padding: $fixed-2;
+      .blog-card {
+        margin-top: $fixed-2;
+        @include grid(300px);
+        .blog-text {
+          grid-column: span 2;
+          h2 {
+            font-size: $headline-md;
+          }
+          p {
+            margin: $fixed-2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog1 {
+  background-color: $blue;
+  @include bgImage("../images/welcome-bg.png");
+
+}
+.blog2 {
+  @include bgImage("../images/blog/blog-bg.png");
+}
+.blog3 {
+  background-color: $alice-blue;
+}
